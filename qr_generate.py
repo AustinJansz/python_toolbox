@@ -1,3 +1,4 @@
+ #!/usr/bin/python
 # Basic packages to get the scirpt up and running
 import pyqrcode, sys, getopt
 

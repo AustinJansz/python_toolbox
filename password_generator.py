@@ -1,5 +1,6 @@
+ #!/usr/bin/python3
 # Basic packages to get the scirpt up and running
-import random, string, clipboard, sys
+import clipboard, random, string, sys
 
 def main(argv):
 	# Get some system randomness
