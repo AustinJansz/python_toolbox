@@ -4,6 +4,9 @@
 
 #### Tool Index
 
+- __colour_replacement.py__: switch out any in-image colour with a new one
+	- Requirements:
+		- PIL (pip install pillow)
 - __password_generator.py__: generate a strong password and copy it to the clipboard
 	- Requirements:
 		- clipboard (pip install clipboard)
