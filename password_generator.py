@@ -17,11 +17,11 @@ def main(argv):
 	clipboard.copy(password)
 
 	# Confirm with the user
-	print("Your password has been copied to the clipboard!")
+	print('Your password has been copied to the clipboard!')
 	# Check if the user would like to see the password
-	print_pass = input("Would you like to see your password? [y|n]: ")
-	if print_pass == "y" or print_pass == "yes":
+	print_pass = input('Would you like to see your password? [y|n]: ')
+	if print_pass == 'y' or print_pass == 'yes':
 		print(password)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
    main(sys.argv[1:])

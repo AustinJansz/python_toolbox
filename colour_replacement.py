@@ -4,7 +4,7 @@ from PIL import Image
 
 def main(argv):
 	# Have the user enter the image path
-	src_loc = input("Path of the image: ")
+	src_loc = input('Path of the image: ')
 	img = Image.open(src_loc)
 
 	# Get the image data as well as its dimensions
@@ -12,8 +12,8 @@ def main(argv):
 	img_width, img_height = img.size
 
 	# Tuple aquisition with the colour they want to replace and the replacement colour
-	source_colour = tuple(int(x.strip()) for x in input("Source colour [R,G,B,A]: ").split(','))
-	ideal_colour = tuple(int(x.strip()) for x in input("Ideal colour [R,G,B,A]: ").split(','))
+	source_colour = tuple(int(x.strip()) for x in input('Source colour [R,G,B,A]: ').split(','))
+	ideal_colour = tuple(int(x.strip()) for x in input('Ideal colour [R,G,B,A]: ').split(','))
 
 	# Iterate through the image and replace the pixels
 	i = 0
@@ -27,14 +27,14 @@ def main(argv):
 	# Set in the altered data
 	new_img.putdata(img_data)
 	# Check to see if the user wants to confirm the image change
-	user_confirm = input("Would you like to confirm the image? [y|n]: ")
-	if user_confirm == "y":
+	user_confirm = input('Would you like to confirm the image? [y|n]: ')
+	if user_confirm == 'y':
 		new_img.show()
 	# Ask for the save location
-	save_loc = input("Path of the new image: ")
-	if save_loc == "":
+	save_loc = input('Path of the new image: ')
+	if save_loc == '':
 		save_loc = src_loc
 	new_img.save(save_loc)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
    main(sys.argv[1:])
